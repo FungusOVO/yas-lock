@@ -7,7 +7,8 @@ members = [
     "yas-derive",
     "yas-application",
     "yas-wutheringwaves"
-, "yas-derive-wuthering-waves"]
+, "yas-derive-wuthering-waves",
+    "lock"]
 
 [profile.release]
 lto = true

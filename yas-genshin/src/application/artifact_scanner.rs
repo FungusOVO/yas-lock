@@ -31,7 +31,7 @@ impl ArtifactScannerApplication {
         cmd
     }
 
-    fn get_window_info_repository() -> WindowInfoRepository {
+    pub fn get_window_info_repository() -> WindowInfoRepository {
         load_window_info_repo!(
             "../../window_info/windows1600x900.json",
             "../../window_info/windows1280x960.json",
@@ -47,7 +47,7 @@ impl ArtifactScannerApplication {
     //         .init();
     // }
 
-    fn get_game_info() -> Result<GameInfo> {
+    pub fn get_game_info() -> Result<GameInfo> {
         let game_info = GameInfoBuilder::new()
             .add_local_window_name("原神")
             .add_local_window_name("Genshin Impact")

@@ -40,6 +40,10 @@ pub struct ArtifactScannerWindowInfo {
     #[window_info(rename = "genshin_artifact_star_pos")]
     pub star_pos: Pos<f64>,
 
+    /// the sample position of lock, relative to window
+    #[window_info(rename = "genshin_artifact_lock_pos")]
+    pub art_lock_pos: Pos<f64>,
+
     /// the whole panel of the artifact, relative to window
     #[window_info(rename = "genshin_repository_panel_rect")]
     pub panel_rect: Rect<f64>,

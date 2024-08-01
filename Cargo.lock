@@ -3638,6 +3638,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "yas-lock"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "env_logger",
+ "image",
+ "log",
+ "regex",
+ "serde",
+ "serde_json",
+ "winres",
+ "yas_core",
+ "yas_scanner_genshin",
+ "yas_scanner_starrail",
+]
+
+[[package]]
 name = "yas_core"
 version = "0.1.14"
 dependencies = [

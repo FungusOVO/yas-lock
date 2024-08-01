@@ -57,4 +57,7 @@ pub struct RelicScannerWindowInfo {
 
     #[window_info(rename = "starrail_repository_item_col")]
     pub col: i32,
+
+    #[window_info(rename = "starrail_repository_item_row")]
+    pub row: i32,
 }

@@ -28,7 +28,7 @@ impl RelicScannerApplication {
         cmd
     }
 
-    fn get_window_info_repository() -> WindowInfoRepository {
+    pub fn get_window_info_repository() -> WindowInfoRepository {
         load_window_info_repo!(
             "../../window_info/windows1920x1080.json"
         )
@@ -40,7 +40,7 @@ impl RelicScannerApplication {
     //         .init();
     // }
 
-    fn get_game_info() -> Result<GameInfo> {
+    pub fn get_game_info() -> Result<GameInfo> {
         let game_info = GameInfoBuilder::new()
             .add_local_window_name("崩坏：星穹铁道")
             .add_local_window_name("Honkai: Star Rail")

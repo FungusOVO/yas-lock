@@ -7,5 +7,5 @@ mod artifact_scanner;
 mod artifact_scanner_config;
 mod scan_result;
 mod artifact_scanner_worker;
-mod artifact_scanner_window_info;
+pub mod artifact_scanner_window_info;
 mod message_items;

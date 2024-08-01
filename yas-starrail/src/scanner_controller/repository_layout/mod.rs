@@ -7,4 +7,4 @@ pub use window_info::StarRailRepositoryScanControllerWindowInfo;
 mod config;
 mod scan_logic;
 mod window_info;
-mod scroll_result;
+pub mod scroll_result;
