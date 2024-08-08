@@ -73,7 +73,7 @@ pub struct AritfactLockConfig {
     #[arg(
         id = "select-time",
         long = "select-time",
-        help = "切换遗器间隔",
+        help = "切换圣遗物间隔",
         value_name = "SELECT_TIME",
         default_value_t = 0
     )]
