@@ -125,6 +125,7 @@ impl ArtifactLock {
                 &window_info_repository,
                 arg_matches,
                 game_info.clone(),
+                true,
             )
             .unwrap(),
         ));
@@ -295,8 +296,9 @@ impl ArtifactLock {
             })
             .unwrap();
 
-        let pos_x = self.window_info.lock_pos.x;
-        let pos_y = self.window_info.lock_pos.y;
+        let pos_x = self.window_info.lock_pos.x + self.window_info.artifact_panel_offset.width;
+        let pos_y = self.window_info.lock_pos.y + self.window_info.artifact_panel_offset.height;
+
         let mut locked = false;
         'sq: for dx in -1..1 {
             for dy in -10..10 {

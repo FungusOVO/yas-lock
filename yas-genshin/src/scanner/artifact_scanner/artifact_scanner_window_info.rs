@@ -44,6 +44,9 @@ pub struct ArtifactScannerWindowInfo {
     #[window_info(rename = "genshin_artifact_lock_pos")]
     pub art_lock_pos: Pos<f64>,
 
+    #[window_info(rename = "genshin_artifact_offset")]
+    pub artifact_panel_offset: Size<f64>,
+
     /// the whole panel of the artifact, relative to window
     #[window_info(rename = "genshin_repository_panel_rect")]
     pub panel_rect: Rect<f64>,
